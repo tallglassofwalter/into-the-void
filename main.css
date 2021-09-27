@@ -1,0 +1,9 @@
+.hidden {
+  visibility: hidden;
+}
+
+.word {
+  opacity: 1;
+  display: inline-block;
+  transition: opacity 2s linear;
+}
