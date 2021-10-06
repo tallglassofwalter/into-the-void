@@ -26,27 +26,19 @@ textarea {
   position: absolute;
   margin: auto;
   display: block;
-  top: 40%;
+  top: 30%;
   left: 50%;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   background: rgba(188, 237, 243, 0.889);
-  /* 8s to complete 1 cycle */
-  animation: breathe 8s linear alternate infinite; 
+  animation: breathe 8s alternate infinite; 
 }
 
-
-
-@keyframes breathe {
-  0% {
-    box-shadow: 0 0 0 15px rgba(188, 237, 243, 0.3),
-    0 0 0 30px rgba(188, 237, 243, 0.3),
-    0 0 0 45px rgba(188, 237, 243, 0.3),
-    0 0 0 60px rgba(188, 237, 243, 0.3),
-    0 0 0 75px rgba(188, 237, 243, 0.3);
-  }
+.display__animation-text::after {
+  content: '';
+  animation: breatheText 16s linear infinite;
 }
 
 .hidden {
@@ -56,4 +48,19 @@ textarea {
 .word {
   opacity: 1;
   display: inline-block;
+}
+
+@keyframes breatheText {
+  0% { content: 'breathe in'; }
+  100% { content: 'breathe out';}
+}
+
+@keyframes breathe {
+  100% {
+    box-shadow: 0 0 0 15px rgba(188, 237, 243, 0.3),
+    0 0 0 30px rgba(188, 237, 243, 0.3),
+    0 0 0 45px rgba(188, 237, 243, 0.3),
+    0 0 0 60px rgba(188, 237, 243, 0.3),
+    0 0 0 75px rgba(188, 237, 243, 0.3);
+  }
 }

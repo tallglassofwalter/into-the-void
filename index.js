@@ -18,12 +18,10 @@ function handleSubmit(e) {
 
 function displayMessage(text) {
   message.classList.remove('hidden');
-  // message.innerHTML = '<h2>take a deep breath</h2>';
-
   setTimeout(() => {
     message.classList.add('hidden');
     transformDisplayText(text);
-  }, 10000);
+  }, 30000);
 }
 
 function displayText(words) {
