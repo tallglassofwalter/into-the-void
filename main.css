@@ -1,3 +1,54 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* main {
+  padding: 5px 5px;
+} */
+
+textarea {
+  display: block;
+  margin: 2% auto;
+  max-width: 50%;
+  height: 100px;
+}
+
+.display__text {
+  text-align: left;
+  margin: auto;
+  max-width: 500px;
+}
+
+.display__animation {
+  color: transparent;
+  position: absolute;
+  margin: auto;
+  display: block;
+  top: 40%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(188, 237, 243, 0.889);
+  /* 8s to complete 1 cycle */
+  animation: breathe 8s linear alternate infinite; 
+}
+
+
+
+@keyframes breathe {
+  0% {
+    box-shadow: 0 0 0 15px rgba(188, 237, 243, 0.3),
+    0 0 0 30px rgba(188, 237, 243, 0.3),
+    0 0 0 45px rgba(188, 237, 243, 0.3),
+    0 0 0 60px rgba(188, 237, 243, 0.3),
+    0 0 0 75px rgba(188, 237, 243, 0.3);
+  }
+}
+
 .hidden {
   display: none;
 }
