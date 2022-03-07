@@ -1,6 +1,6 @@
 # into-the-void
 
-A site that for mindfulness that combines journaling and breathing exercises.
+A site for mindfulness that combines journaling and breathing exercises.
 
 [Demo](https://tallglassofwalter.github.io/into-the-void/)
 
